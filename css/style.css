@@ -135,6 +135,12 @@ main{
     
 }
 
+.liste{
+    color: antiquewhite;    
+    text-align: start;
+    max-width: 450px;
+}
+
 
 article{
     display: flex;
@@ -146,6 +152,15 @@ article{
     width:100%;
     margin: 1rem auto;
     
+}
+
+.text_align{    
+    text-align: center;
+    color: antiquewhite;
+}
+
+.screenshots{
+    max-width: fit-content;
 }
 
 
