@@ -1,0 +1,376 @@
+html, body {
+    margin: 0;
+    background-color: rgb(13, 2, 38);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    background-color: #239FA7;
+    padding: 20px 10px;
+    margin: 0;
+    
+}
+
+.desktop_meny{
+    display: none;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.type{    
+    max-width: 500px;
+}
+
+.document-space {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.logo{
+    color: black;
+}
+
+.fa-solid {
+    font-size: 50px;
+}
+
+
+/* Brødsmulesti - (ul.b_smule_sti)  : https://www.w3schools.com/howto/howto_css_breadcrumbs.asp */
+ul.b_smule_sti {
+    padding: 10px 16px 0px;
+    list-style: none;
+    margin: 0;
+}
+
+ul.b_smule_sti li {
+    display: inline;
+    font-size: 12px;
+}
+
+ul.b_smule_sti li+li:before {
+    padding: 8px;
+    color: rgb(103, 117, 118);
+    content: "/\00a0";
+}
+
+ul.b_smule_sti li a {
+    color: #0275d8;
+    text-decoration: none;
+}
+
+ul.b_smule_sti li a:hover { 
+    color: #01447e;
+    text-decoration: underline;
+}
+
+.handle_firkant{
+    background-color: #585858;
+    margin: 2rem 0 0 0;  
+    max-width: 500px;  
+}
+
+.handle_firkant p{
+    color: antiquewhite;
+    text-align: center;
+    margin: 0 0 2rem 0;
+    
+}
+
+.handlepris{
+    background-color: rgb(40, 40, 40);
+    width: 50px;
+    height: 95px;
+    
+}
+
+.handlepris p{
+    margin: 0;
+    font-size: 13px;
+}
+
+.fa-regular, .fa-brands, .fa-solid{
+    font-size: 30px;
+}
+
+
+.handle-fa{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+
+
+
+.trio{  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 70px;
+    background-color: #474747;
+    padding: 0.4rem 0.3rem;
+}
+
+.handle_firkant article{
+    text-align: center;
+    width: 100%;
+    background-color:#474747
+    margin: 0.5rem;
+}
+
+
+main h1{
+    color:antiquewhite;
+    text-align:center;
+}
+
+
+main{
+    display:flex;
+    flex-flow: column wrap;
+    
+}
+
+
+article{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    flex-wrap: wrap;
+    max-width: 500px;
+    width:100%;
+    margin: 1rem auto;
+    
+}
+
+
+
+main h2{
+    color:antiquewhite;
+    text-align:center;
+    font-size: 18px;
+    font-weight: 600;
+    width: 100%;
+}
+
+article a{
+    display: flex;
+    justify-content:space-evenly
+}
+
+.bilde_links{
+    background-color: #424c52;
+    color: antiquewhite;
+    font-size: 13px;
+    text-decoration: none;
+    padding: 1rem 1rem;
+    margin: 0 2rem 0rem 2rem;
+    
+
+}
+
+.buy{
+    background-color:chartreuse;
+    color:antiquewhite;
+    font-size: 40px;
+    text-decoration: none;
+    padding: 1rem 1rem;
+    margin: 2rem 2rem 2rem 7rem;
+}
+
+.message{
+    color: antiquewhite;
+    font-size: 40px;
+    margin: 0 0 0 3rem;
+}
+
+article img{    
+    width: 100%;
+    background-color:#0000;
+    margin: 0 auto;
+}
+
+h3{
+    color:antiquewhite;
+    text-align:center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    width: 100%;
+}
+
+article p{
+    color: antiquewhite;
+}
+
+
+.handlegps{
+    display: flex;
+    flex-direction: column;    
+    max-width: 400px;
+    justify-content: center;    
+}
+
+.handlegps p{
+    text-align: center;
+}
+
+.stjerner{
+    display: none;
+}
+
+.action_buttons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 1rem 0 0 0;
+}
+
+.lignende{
+    text-align: center;
+    color: antiquewhite;
+    font-size: smaller;
+    background-color: #474747;
+    margin: 0 0 3rem 0;
+    max-width: 500px;
+}
+
+.lignende_bilder{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 25px;
+    padding: 0.4rem 0.3rem;
+}
+
+.medlem{
+    display: none;
+}
+
+.handle_total{
+    display: none;
+    color: antiquewhite;
+    text-align: center;    
+}
+
+/* Footer css er også hentet fra: https://www.youtube.com/watch?v=lLdzlLL33G8&ab_channel=GreatStack */
+.footer{
+    margin-top: 100px;
+    width: 100%;
+    padding: none;
+    background-color: #239FA7;
+    color: black;
+    font-size: 14px;
+    display: flex;
+}
+
+.footer section{
+    text-align: center;
+}
+
+.frad-2{    
+    flex-grow: 1;
+}
+
+.footer section h4{
+    font-weight: 300;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.frad-1 a, .frad-3 a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 5px;
+}
+
+form input{
+    width: 130px;
+    height: 25px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    outline: none;
+    border: none;
+}
+
+
+
+@media screen and (min-width: 700px) {
+    .desktop_index{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1rem;
+        
+    }
+
+    .stjerner{
+        display: block;
+        margin: 0 0 3rem 0;
+    }
+
+    .action_buttons{
+        margin: 5rem 0 0 0;
+    }
+
+    .desktop_meny{
+        display: flex;
+        
+    }
+
+    .desktop_meny ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 1rem;
+        
+    }
+
+    .desktop_meny li{
+        list-style: none;
+        
+    }
+
+    .desktop_meny li a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .hamburger-ikon{
+        display: none;
+    }
+
+    .handle_firkant{
+        margin: 2rem 0 0 4rem;
+    }
+
+    .medlem{
+        display: block;
+        margin: 2rem 0 5rem 8rem;
+    }
+
+    .h_t_overskrift{
+        text-decoration: underline;
+        font-weight: 600;
+    }
+
+    .handle_total{
+        display: block;
+        color: antiquewhite;
+        text-align: center;   
+        margin: 0 7rem 3rem 0;
+         
+    }
+
+    .buy_and_chat{
+        margin: 5rem 0 0 2rem;
+    }
+
+
+}
