@@ -33,8 +33,49 @@
                 <h3>Lighthouse analyse: UU</h3>
                 <p> I dette avsnittet tar vi for oss resultatene fra lighthouse rapportene. Først ser vi på UU:</p>
                 <article class="screenshots">
-                    <img src="img/index_uu.PNG" alt="bilde av forside med resultater fra lighthouse rapport">
-                    <h4>Lighthouse resultat av index-siden på sko butikken</h4>
+                    <img src="img/index_uu.PNG" alt="bilde av forside med UU resultater fra lighthouse rapport">
+                    <h4>Lighthouse UU resultat av index-siden</h4>
+                    <p>
+                        Først kan vi se at man kan forbedre ikonene på toppen av "headeren". Det blir foreslått bedre semantikk og info om hva ikonene gjør,
+                        sånn at man også kan få lest opp beskrivelsen av dem med en "screen reader".
+                        Det blir også gjort oppmerksom på at overskrift ikke har blitt brukt i riktig rekkefølge. Ser ut som det kan komme av en h4 overskrift
+                        i "footer"
+                    </p>
+                </article>
+                <article class="screenshots">
+                    <img src="img/product_uu.PNG" alt="bilde av produktside med UU resultater fra lighthouse rapport">
+                    <h4>Lighthouse UU resultat av produkt-siden</h4>
+                    <p>
+                        På produkt siden, kan vi se at de samme feilene dukket opp igjen på footer og header, som er like på alle sidene.
+                        Men det kom også frem at det var litt dårlig kontrast på brødsmulestien og i noe skrift midt på siden, som må gjøres mer leselig med bedre kontrast.
+                    </p>
+                </article>
+                <article class="screenshots">
+                    <img src="img/handlevogn_uu.PNG" alt="bilde av handlevogn med UU resultater fra lighthouse rapport">
+                    <h4>Lighthouse UU resultat av handlevogn-siden</h4>
+                    <p>Igjen støter vi på de samme feilene som vi har på de to første sidene. Eneste nytt på denne siden var at det var flere steder som ikke hadde bra nok kontrast.</p>
+                </article>
+                <h3>Lighthouse analyse: SEO</h3>
+                <article class="screenshots">
+                    <img src="img/index_seo.PNG" alt="bilde av forside med SEO resultater fra lighthouse rapport">
+                    <h4>Lighthouse SEO resultat av index-siden</h4>
+                    <p>
+                        I denne seksjonen av rapporten blir vi bedt om å ha med meta beskrivelse av html koden, slik at "crawlere" fra søkemotorer kan se hva som er på siden.
+                    </p>
+                </article>
+                <article class="screenshots">
+                    <img src="img/product_seo.PNG" alt="bilde av produktside med SEO resultater fra lighthouse rapport">
+                    <h4>Lighthouse SEO resultat av produktside</h4>
+                    <p>
+                        Denne siden får akkurat samme feilmelding som forside, at den mangler meta data.
+                    </p>
+                </article>
+                <article class="screenshots">
+                    <img src="img/handlevogn_seo.PNG" alt="bilde av handlevogn-siden med SEO resultater fra lighthouse rapport">
+                    <h4>Lighthouse SEO resultat av prodruktside</h4>
+                    <p>
+                        Alle 3 sidene har fått samme resultat og mangler igjen meta data for å få en bedre score på SEO rapporten.
+                    </p>
                 </article>
 
             </section>
