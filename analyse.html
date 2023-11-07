@@ -30,8 +30,9 @@
                 </p>
             </section>
             <section class="text_align">
+
                 <h3 class="top_margin">Lighthouse analyse - UU:</h3>
-                <p> I dette avsnittet tar vi for oss resultatene fra lighthouse rapportene. Først ser vi på UU:</p>
+                
                 <article class="screenshots">
                     <img src="img/index_uu.PNG" alt="bilde av forside med UU resultater fra lighthouse rapport">
                     <h4>Lighthouse UU resultat av index-siden</h4>
@@ -55,7 +56,9 @@
                     <h4>Lighthouse UU resultat av handlevogn-siden</h4>
                     <p>Igjen støter vi på de samme feilene som vi har på de to første sidene. Eneste nytt på denne siden var at det var flere steder som ikke hadde bra nok kontrast.</p>
                 </article>
+
                 <h3 class="top_margin">Lighthouse analyse - SEO:</h3>
+
                 <article class="screenshots">
                     <img src="img/index_seo.PNG" alt="bilde av forside med SEO resultater fra lighthouse rapport">
                     <h4>Lighthouse SEO resultat av index-siden</h4>
@@ -77,7 +80,34 @@
                         Alle 3 sidene har fått samme resultat og mangler igjen meta data for å få en bedre score på SEO rapporten.
                     </p>
                 </article>
+
+                <h3>Webaim analyse:</h3>
+
+                <article class="screenshots">
+                    <img src="img/index_webaim.PNG" alt="bilde av forside med resultater fra webaim rapport">
+                    <h4>Webaim resultat av index-siden</h4>
+                    <p>
+                        Her dukker det opp 5 røde feilmeldinger. Dette gjelder linker som ikke fører noe sted eller har noe beskrivelse på seg. Det er også manglende label/form på feltet man kan skrive eposten sin på. 
+                        Fikk også beskjed om feil rekkefølge på en av overskriftene og linker som fører til samme sted. Dette var orangsje meldinger.
+                    </p>
+                </article>
+                <article class="screenshots">
+                    <img src="img/produkt_webaim.PNG" alt="bilde av produktside med resultater fra webaim rapport">
+                    <h4>Webaim resultat av produktside</h4>
+                    <p>
+                        Her får vi opp de samme feilene som var på index-siden, siden fleste parten av feilene er i header og footer. Får også noen ekstra røde meldinger som sier at det er for dårlig kontrast.
+                    </p>
+                </article>
+                <article class="screenshots">
+                    <img src="img/handlevogn_webaim.PNG" alt="bilde av handlevogn-siden med resultater fra webaim rapport">
+                    <h4>Webaim resultat av handlevogn-siden</h4>
+                    <p>
+                        Igjen dukker de samme feilene opp, men vi får i tillegg opp noen ekstra kontrast feilmeldinger.
+                    </p>
+                </article>
+
                 <h3 class="top_margin">AI analyse av SEO og UU:</h3>
+
                 <article class="screenshots">
                     <img src="img/index_ai_rapport.png" alt="bilde av ai rapporten om index-siden">
                     <h4>Chat GPT rapport av index-siden</h4>
@@ -98,22 +128,32 @@
                     </p>
                 </article>
 
-                <table>
+                <table class="border">
                     <tr>
-                      <th>Company</th>
-                      <th>Contact</th>
-                      <th>Country</th>
+                      <th>Lighthouse</th>
+                      <th>Webaim</th>
+                      <th>Chat GPT</th>
                     </tr>
                     <tr>
-                      <td>Alfreds Futterkiste</td>
-                      <td>Maria Anders</td>
-                      <td>Germany</td>
+                      <td>SEO</td>
+                      <td>SEO</td>
+                      <td>SEO</td>
                     </tr>
                     <tr>
-                      <td>Centro comercial Moctezuma</td>
-                      <td>Francisco Chang</td>
-                      <td>Mexico</td>
+                      <td>Ha med meta beskrivelse for crawlere og bedre beskrivelse av siden</td>
+                      <td>Feil rekkefølge på overskrifter. Flere linker fører til samme sted</td>
+                      <td>Ha bedre meta data og semantiske tagger. Bruk av title kan bli bedre.</td>
                     </tr>
+                    <tr>
+                        <td>UU</td>
+                        <td>UU</td>
+                        <td>UU</td>
+                      </tr>
+                      <tr>
+                        <td>Gi ikoner i header bedre info om hva de gjør og bedre semantikk. Må ta bedre hensyn til en screenreader. Får også beskjed om å fikse rekkefølge på overskrifter. Fikse kontrast på brødsmulesti og andre elementer.</td>
+                        <td>Fikse ikoner, gi bedre info eller ha link som fører noe sted. Mangler label på skrivefelt i footer. Nevner dårlig kontrast.</td>
+                        <td>Kan ha bedre alt tekst til bilder og bedre beskrivelse av linker. Navigering kan også forbedres, samme som responsiviteten. Sørg for at man kan navigere med keyboard osv.</td>
+                      </tr>
                   </table> 
 
             </section>
