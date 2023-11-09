@@ -169,7 +169,7 @@ main{
 
 table {
     border-collapse: collapse;
-    border-spacing: 0; /* Fjerner mellomrom mellom celler */
+    border-spacing: 0;
     
 }
 
@@ -181,7 +181,7 @@ td, th{
 }
 
 th{
-    background-color:rgb(29, 29, 29);
+    background-color:rgb(57, 57, 57);
     color: antiquewhite;
 }
 
