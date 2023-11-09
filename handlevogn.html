@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta name="description" content="Handlevognen der du kan velge antall og betalingsmetode">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
         <title>Produktside</title>
@@ -11,15 +12,19 @@
         <header>                
             <a href="index.html" class="logo">
                 <i class="fa-solid fa-house trdt"></i>
+                <span>Hjem</span>
             </a>
             <a href="#" class="logo">
                 <i class="fa-solid fa-magnifying-glass"></i>
+                <span>Søk</span>
             </a>
             <a href="handlevogn.html" class="logo">
                 <i class="fa-solid fa-cart-shopping"></i>
+                <span>Handlekurv</span>
             </a>
             <a href="#" class="logo hamburger-ikon">
                 <i class="fa-solid fa-bars"></i>
+                <span>Meny</span>
             </a>
             <nav class="desktop_meny">
                 <ul>
@@ -99,7 +104,7 @@
     <!-- For hjelp med footer: https://www.youtube.com/watch?v=lLdzlLL33G8&ab_channel=GreatStack-->
     <footer class="footer">
         <section class="frad-1">
-            <h4>Om oss</h4>
+            <h3>Om oss</h3>
             <a href="#">Kontakt</a>
             <a href="#">Tjenester</a>
             <a href="#">Butikker</a>
@@ -107,14 +112,15 @@
             <a href="#">Jobb</a>
         </section>
         <section class="frad-2">
-            <h4>Få katalog</h4>
-            <form method="post" action="#">                    
+            <h3>Få katalog</h3>
+            <form method="post" action="#"> 
+                <label for="lab" hidden>Din epost</label>                   
                 <input type="email" name="email" placeholder="post@mail.com" id="email" required>
                 <button type="submit">Abonner</button>
             </form>
         </section>
         <section class="frad-3">
-            <h4>Kategorier</h4>
+            <h3>Kategorier</h3>
             <a href="#">Kvinner</a>
             <a href="#">Menn</a>
             <a href="#">Ungdom</a>

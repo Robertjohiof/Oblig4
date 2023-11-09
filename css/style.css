@@ -36,6 +36,10 @@ header{
     color: black;
 }
 
+.logo span{
+    display: none;
+}
+
 .fa-solid {
     font-size: 50px;
 }
@@ -60,17 +64,17 @@ ul.b_smule_sti li+li:before {
 }
 
 ul.b_smule_sti li a {
-    color: #0275d8;
+    color: #ffffff;
     text-decoration: none;
 }
 
 ul.b_smule_sti li a:hover { 
-    color: #01447e;
+    color: #343434;
     text-decoration: underline;
 }
 
 .handle_firkant{
-    background-color: #585858;
+    background-color: #2f2f2f;
     margin: 2rem 0 0 0;  
     max-width: 500px;  
 }
@@ -78,8 +82,7 @@ ul.b_smule_sti li a:hover {
 .handle_firkant p{
     color: antiquewhite;
     text-align: center;
-    margin: 0 0 2rem 0;
-    
+    margin: 0 0 2rem 0;    
 }
 
 .handlepris{
@@ -118,7 +121,7 @@ ul.b_smule_sti li a:hover {
 .handle_firkant article{
     text-align: center;
     width: 100%;
-    background-color:#474747
+    background-color:#2f2f2f
     margin: 0.5rem;
 }
 
@@ -164,11 +167,30 @@ main{
     margin: 7rem 0 0 0;
 }
 
-.border{
-    border: 1px;
-    border: rgb(255, 255, 255);
-    width: 100%;
+table {
+    border-collapse: collapse;
+    border-spacing: 0; /* Fjerner mellomrom mellom celler */
+    
 }
+
+td, th{
+    padding: 10px;
+    border: 1px solid antiquewhite;
+
+
+}
+
+th{
+    background-color:rgb(29, 29, 29);
+    color: antiquewhite;
+}
+
+td{
+    font-size: 12px;
+    background-color: #000000;
+    
+}
+    
 
 .top_margin{
     margin: 7rem 0 0 0;
@@ -202,7 +224,7 @@ article a{
 
 .buy{
     background-color:chartreuse;
-    color:antiquewhite;
+    color:black;
     font-size: 40px;
     text-decoration: none;
     padding: 1rem 1rem;
@@ -221,14 +243,7 @@ article img{
     margin: 0 auto;
 }
 
-h3{
-    color:antiquewhite;
-    text-align:center;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 24px;
-    font-weight: 500;
-    width: 100%;
-}
+
 
 article p{
     color: antiquewhite;
@@ -366,6 +381,23 @@ form input{
     .desktop_meny li a{
         text-decoration: none;
         color: black;
+    }
+
+    .logo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    .logo{
+        
+    }
+
+    .logo span{
+        display: inline-block;
+        
+
     }
 
     .hamburger-ikon{
