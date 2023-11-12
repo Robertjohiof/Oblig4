@@ -46,10 +46,25 @@
         </header>
         <!--Brødsmulesti: https://www.w3schools.com/howto/howto_css_breadcrumbs.asp-->
         <main>
-            <ul class="b_smule_sti">
-                <li><a href="analyse.html">Analyse</a></li>
-                <li><a href="index.html">Hjem</a></li>
-                <li><a href="produkt.html">Produkt</a></li>                               
+            <ul class="b_smule_sti" itemscope itemtype="http://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                    <a href="analyse.html" itemprop="item">
+                        <span itemprop="name">Analyse</span>
+                    </a>
+                    <meta itemprop="position" content="1"/>
+                </li>
+                <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                    <a href="index.html" itemprop="item">
+                        <span itemprop="name">Hjem</span>
+                    </a>
+                    <meta itemprop="position" content="2"/>
+                </li>
+                <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                    <a href="produkt.html" itemprop="item">
+                        <span itemprop="name">Produkt</span>
+                    </a>
+                    <meta itemprop="position" content="3"/>
+                </li>                               
             </ul>
             <h1>Harvey</h1> 
             <!-- Bildene er generert med Bing og leonardo ai-->            
