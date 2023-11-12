@@ -66,35 +66,41 @@
                     <meta itemprop="position" content="3"/>
                 </li>                               
             </ul>
-            <h1>Harvey</h1> 
+            <h1 itemprop="name">Harvey</h1> 
             <!-- Bildene er generert med Bing og leonardo ai-->            
             <section class="desktop_index">
-                <article class="art_align">                    
-                    <img src="img/herre.jpg" alt="Category for leathershoes">
+                <article class="art_align" itemscope itemtype="https://schema.org/Product">                    
+                    <img  itemprop="image" src="img/herre.jpg" alt="Picture of selected leathershoes">
                     <!-- Bildet under er hentet fra Figma prosjektet mitt-->
-                    <img src="img/Group29.svg" alt="Type_og_str" class="full-width type">                    
+                    <img itemprop="offers" src="img/Group29.svg" alt="Type_og_str" class="full-width type">                                       
                 </article> 
                 <!-- Bildet under er hentet fra Figma prosjektet mitt-->               
-                <section class="document-space handlegps">
+                <section class="document-space handlegps" itemscope itemtype="http://schema.org/Product">
                     <article class="art_align">
-                        <img src="img/stjerner.png" alt="User_reviews" class="stjerner">
-                        <h2>Pensko</h2>
-                        <p>
+                        <img itemprop="image" src="img/stjerner.png" alt="User_reviews" class="stjerner">                        
+                        <h2 itemprop="name">Pensko</h2>
+                        <p itemprop="description">
                             It is a long established fact that a reader will be distracted by the 
                             readable content of a page when looking at its layout. The point of using 
                             Lorem Ipsum is that it has a more-or-less normal distribution of letters, 
                             as opposed to using 'Content here, content here', making it look like readable English. 
                             Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model.
                         </p>
-                        <h2>Pris: kr1500</h2>
+                        <h2 itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                            Pris: <span itemprop="priceCurrency" content="NOK">kr</span><span itemprop="price" content="1500">1500</span>
+                        </h2>
                     </article>
                     <!-- Bildene under er hentet fra Figma prosjektet mitt-->
                     <div class="action_buttons">
-                        <a href="handlevogn.html">
-                            <img src="img/Handlevogn.svg" alt="Til handlevogn" class="full-width">                
+                        <a href="handlevogn.html" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                            <img src="img/Handlevogn.svg" alt="Til handlevogn" class="full-width">
+                            <meta itemprop="priceCurrency" content="NOK"/>
+                            <meta itemprop="price" content="1500"/>
+                            <link itemprop="availability" href="http://schema.org/InStock"/>                
                         </a>
-                        <a href="#">
+                        <a href="#" itemprop="potentialAction" itemscope itemtype="http://schema.org/BuyAction">
                             <img src="img/GPS.svg" alt="gps tegn" class="full-width">
+                            <meta itemprop="url" content="#" />
                         </a>
                     </div>
                 </section>
