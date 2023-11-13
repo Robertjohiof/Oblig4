@@ -4,6 +4,12 @@ https://www.w3schools.com/howto/howto_css_breadcrumbs.asp
 For footer:
 https://www.youtube.com/watch?v=lLdzlLL33G8&ab_channel=GreatStack
 
+For Meta og Micro:
+https://developers.facebook.com/docs/sharing/webmasters/
+    og: https://www.w3schools.com/tags/tag_meta.asp
+
+
+
 Alle bilder er generert av image-generators fra Bing , Leonardo ai og Figma.
 
 Ikoner er fra font awesome.

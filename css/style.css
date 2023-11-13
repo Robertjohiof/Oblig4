@@ -167,6 +167,7 @@ main{
     margin: 7rem 0 0 0;
 }
 
+/*Har fått litt hjelp av https://chat.openai.com/?model=gpt-4 med css til table*/
 table {
     border-collapse: collapse;
     border-spacing: 0;

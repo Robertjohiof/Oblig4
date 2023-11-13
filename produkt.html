@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+    <!--meta som er brukt under er hentet fra: https://developers.facebook.com/docs/sharing/webmasters/
+    og: https://www.w3schools.com/tags/tag_meta.asp-->
+    <head>        
         <meta name="description" content="Produktsiden med litt ekstra info kategorien og mulighter til å putte i handlevogn">
         <meta name="keywords" content="Harvey, handle, brukeranmeldelser, lagerstatus, størrelser">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
+
+        <meta property="og:url"          content="http://www.itstud.hiof.no/~robertjo/oblig4"/>
+        <meta property="og:type"         content="Shoe Shop"/>
+        <meta property="og:title"        content="FestivalSko"/>
+        <meta property="og:description"  content="Festsko til alle anledninger"/>
+        <meta property="og:image"        content="http://www.itstud.hiof.no/~robertjo/oblig4/img/herre.jpg">
         <title>Produktside</title>
         <link rel="stylesheet" href="css/style.css" type="text/css">
         <script src="https://kit.fontawesome.com/6351096b01.js" crossorigin="anonymous"></script>
@@ -45,7 +53,8 @@
             </nav>    
         </header>
         <!--Brødsmulesti: https://www.w3schools.com/howto/howto_css_breadcrumbs.asp-->
-        <main>
+        <!--Har fått hjelp med micro data fra https://chat.openai.com/?model=gpt-4 og https://schema.org/-->
+        <main itemscope itemtype="https://schema.org/Product">
             <ul class="b_smule_sti" itemscope itemtype="http://schema.org/BreadcrumbList">
                 <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                     <a href="analyse.html" itemprop="item">
@@ -69,13 +78,13 @@
             <h1 itemprop="name">Harvey</h1> 
             <!-- Bildene er generert med Bing og leonardo ai-->            
             <section class="desktop_index">
-                <article class="art_align" itemscope itemtype="https://schema.org/Product">                    
+                <article class="art_align">                    
                     <img  itemprop="image" src="img/herre.jpg" alt="Picture of selected leathershoes">
                     <!-- Bildet under er hentet fra Figma prosjektet mitt-->
-                    <img itemprop="offers" src="img/Group29.svg" alt="Type_og_str" class="full-width type">                                       
+                    <img itemprop="image" src="img/Group29.svg" alt="Type_og_str" class="full-width type">                                       
                 </article> 
                 <!-- Bildet under er hentet fra Figma prosjektet mitt-->               
-                <section class="document-space handlegps" itemscope itemtype="http://schema.org/Product">
+                <section class="document-space handlegps">
                     <article class="art_align">
                         <img itemprop="image" src="img/stjerner.png" alt="User_reviews" class="stjerner">                        
                         <h2 itemprop="name">Pensko</h2>
